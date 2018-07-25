@@ -1,0 +1,151 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="http://fluig.totvs.com/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+	<style>
+	.wrapper{
+		max-width:1000px;
+		width:100%;
+		margin:0 auto;
+		padding:0;
+	}
+	</style>
+</head>
+<body>
+<div class="fluig-style-guide wrapper">
+<form name="form" role="form">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 >Solicitação </h3>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class='col-md-6'>
+					<label for="dtsol">Data de Abertura</label>
+					<input type="text" class="form-control" id="dtsol" name="dtsol" readonly="readonly"/>
+				</div>
+				<div class='col-md-6'>
+					<label for="codsol">Codigo</label>
+					<input type="text" class="form-control" id="codsol" name="codsol" readonly="readonly"/>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 >Dados Funcion&aacute;rio </h3>
+		</div>
+		<div class="panel-body">
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav nav-tabs clearfix">
+					<li class="active" ><a href="#dadosPessoais" id="aNavDadosCliente" role="tab"
+						data-toggle="tab">Dados Pessoais</a></li>
+					<li><a href="#endereco" id="aItensPedido" role="tab"
+						data-toggle="tab">Endere&ccedil;o</a></li>													
+				</ul>
+			</div>
+			<div class="tab-content">
+			     <div class="tab-pane active" id="dadosPessoais">
+				     <div class="row">
+						<div class='col-md-8'>
+							<label for="name">Nome</label>
+							<input type="text" class="form-control" id="name" name="name"/>
+						</div>
+						<div class='col-md-4'>
+							<label for="cpf">CPF</label>
+							<input type="text" class="form-control" id="cpf" name="cpf" maxlength='14' />
+						
+						</div>
+					</div>
+					<div class="row">
+						<div class='col-md-6'>
+							<!--label for="dtnasc">Data Nascimento</label>
+							<input type="text" class="form-control" id="dtnasc" name="dtnasc"/-->
+							<label for="dtnasc">Data Nascimento</label>
+							<div class="input-group">
+					            <input class="form-control" id="dtnasc"name="dtnasc"type="text" placeholder="Data de Nascimento">
+					            <div class="input-group-addon"><i class="fluigicon fluigicon-xs fluigicon-calendar"></i></div>
+				            </div>
+						</div>
+						<div class='col-md-2'>
+							<label for="age">Idade</label>
+							<input type="text" class="form-control" id="age" name="age" readonly="readonly" />
+						
+						</div>
+						<div class='col-md-4'>
+							<label for="cpf">Sexo</label>
+							<select  class="form-control" id="cpf" name="cpf" />
+								<option value="M">Masculino</option>
+								<option value="F">Feminino</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class='col-md-8'>
+							<label for="celphone">Celular</label>
+							<input type="text" class="form-control" id="celphone" name="celphone" maxlength='13'/>
+						</div>
+						<div class='col-md-4'>
+							<label for="email">E-mail</label>
+							<input type="text" class="form-control" id="email" name="email" />
+						
+						</div>
+					</div>
+			     </div>
+			     <div class="tab-pane" id="endereco">
+				     <div class="row">
+						<div class='col-md-4'>
+							<label for="cep">CEP</label>
+							<input type="text" class="form-control" id="cep" name="cep"/>
+						</div>
+						<div class='col-md-8'>
+							<label for="address">RUA</label>
+							<input type="text" class="form-control" id="address" name="address" readonly/>
+						
+						</div>
+					</div>
+					<div class="row">
+						<div class='col-md-2'>
+							<label for="number">No</label>
+							<input type="text" class="form-control" id="number" name="number"/>
+						</div>
+						<div class='col-md-5'>
+							<label for="complement">Complemento</label>
+							<input type="text" class="form-control" id="complement" name="complement" />
+						
+						</div>
+						<div class='col-md-5'>
+							<label for="county">Bairro</label>
+							<input type="text" class="form-control" id="county" name="county" readonly/>
+						
+						</div>
+					</div>
+					<div class="row">
+						<div class='col-md-4'>
+							<label for="state">Estado</label>
+							<input type="text" class="form-control" id="state" name="state" readonly/>
+						</div>
+						<div class='col-md-8'>
+							<label for="city">Municipio</label>
+							<input type="text" class="form-control" id="city" name="city" readonly />
+						
+						</div>
+					</div>
+			     </div>
+			</div>
+		</div>
+	</div>
+	
+
+</form>
+</div>
+
+<script type="text/javascript" src="http://fluig.totvs.com/portal/resources/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://fluig.totvs.com/portal/resources/js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://fluig.totvs.com/portal/resources/js/mustache/mustache-min.js"></script>
+<script type="text/javascript" src="http://fluig.totvs.com/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script type="text/javascript" src="custom.min.js" charset="utf-8"></script>
+</body>
+</html>
